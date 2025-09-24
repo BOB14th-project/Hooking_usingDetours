@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="HookingTarget">
+      <UniqueIdentifier>{ed767046-6404-45a9-96d3-090812b25872}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="exports.cpp" />
+    <ClCompile Include="HookingFunc.cpp" />
+    <ClCompile Include="FileSystem.cpp">
+      <Filter>HookingTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="Network.cpp">
+      <Filter>HookingTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="Process.cpp">
+      <Filter>HookingTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="Registery.cpp">
+      <Filter>HookingTarget</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="HookingFunc.h" />
+    <ClInclude Include="FileSystem.h">
+      <Filter>HookingTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="Network.h">
+      <Filter>HookingTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="Process.h">
+      <Filter>HookingTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="Registery.h">
+      <Filter>HookingTarget</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
